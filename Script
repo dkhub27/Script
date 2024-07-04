@@ -1,0 +1,46 @@
+
+if Fluent then
+    Fluent:Destroy()
+end
+
+local scripts = {
+    [15744137588] = "https://raw.githubusercontent.com/Christian2703/BladeSlayer/main/Bladescript",
+    [17556050821] = "https://raw.githubusercontent.com/Christian2703/BladeSlayer/main/Bladescript",
+    [15973035336] = "https://raw.githubusercontent.com/Christian2703/Pet-Fighters-Simulator/main/PetFightersSimulator.lua",
+    [17682006827] = "https://raw.githubusercontent.com/Christian2703/AnimeTransformSimulator/main/AnimeTransformSimulator",
+    [16981421605] = "https://raw.githubusercontent.com/Christian2703/RebornAsSwordman/main/RebornAsSwordman.lua",
+    [16436007861] = "https://raw.githubusercontent.com/Christian2703/WarriorSimulator/main/WarriorSimulator",
+    [17678973277] = "https://raw.githubusercontent.com/Christian2703/WarriorSimulator/main/WarriorSimulator",
+    [17678973620] = "https://raw.githubusercontent.com/Christian2703/WarriorSimulator/main/WarriorSimulator",
+    [17678973875] = "https://raw.githubusercontent.com/Christian2703/WarriorSimulator/main/WarriorSimulator",
+    [17856546976] = "https://raw.githubusercontent.com/Christian2703/WarriorSimulator/main/WarriorSimulator",
+    [17678974142] = "https://raw.githubusercontent.com/Christian2703/WarriorSimulator/main/WarriorSimulator",
+    [17290473507] = "https://raw.githubusercontent.com/Christian2703/WarriorSimulator/main/WarriorSimulator",
+    [17766697506] = "https://raw.githubusercontent.com/Christian2703/WarriorSimulator/main/WarriorSimulator",
+    [17344826266] = "https://raw.githubusercontent.com/Christian2703/AnimeOdyssey/main/AnimeOdyssey.lua",
+    [14484114005] = "https://raw.githubusercontent.com/Christian2703/AnimeRealmsSimulator/main/AnimeRealmsSimulator.lua",
+    [17114605748] = "https://raw.githubusercontent.com/Christian2703/AnimePunchingSimulator2/main/AnimePunchingSimulator2.lua",
+    [17872649351] = "https://raw.githubusercontent.com/Christian2703/AnimePunchingSimulator2/main/AnimePunchingSimulator2.lua",
+    [14752086859] = "https://raw.githubusercontent.com/Christian2703/dkscript/main/AnimeMax.lua",
+    [16712648821] = "https://raw.githubusercontent.com/Christian2703/AnimeRacing2/main/AnimeRacing2.lua",
+    [14195873109] = "https://raw.githubusercontent.com/Christian2703/SlayerCorps/main/SlayerCorps",
+    [17489613630] = "https://raw.githubusercontent.com/Christian2703/SlayerCorps/main/SlayerCorps",
+    [142823291] = "https://raw.githubusercontent.com/Christian2703/Murder-Mystery-2/main/MurderMystery2",
+    [16741537517] = "https://raw.githubusercontent.com/Christian2703/AnimeHeroesSimulator/main/AnimeHeroesSimulator",
+    [8540346411] = "https://raw.githubusercontent.com/Christian2703/Rebirth-Champions-X/main/RebirthChampionsX",
+    [14015533453] = "https://raw.githubusercontent.com/Christian2703/AnimeRealms/main/AnimeRalmsScript.lua"
+}
+
+local scriptExecuted = false
+
+if not scriptExecuted then
+    local scriptUrl = scripts[game.PlaceId]
+
+    if scriptUrl then
+        loadstring(game:HttpGet(scriptUrl))()
+        scriptExecuted = true
+    else
+        toclipboard("https://discord.gg/dkhub")
+        game.Players.LocalPlayer:Kick("Game Not Supported, Discord copied to clipboard")
+    end
+end
