@@ -30,7 +30,7 @@ local scripts = {
     [8540346411] = "https://raw.githubusercontent.com/dkhub27/RebirthChampionsX/main/RebirthChampionsX.lua",
     [14015533453] = "https://raw.githubusercontent.com/dkhub27/AnimeRelms/main/AnimeRelms.lua",
     [17857913030] = "https://raw.githubusercontent.com/dkhub27/AnimeHaven/main/AnimeHavenSimulator.lua",
-    [17857913030] = "https://raw.githubusercontent.com/dkhub27/Anime-Destiny-Simulator/main/AnimeDestinySimulator.lua"
+    [15968393246] = "https://raw.githubusercontent.com/dkhub27/Anime-Destiny-Simulator/main/AnimeDestinySimulator.lua"
 }
 
 local scriptExecuted = false
